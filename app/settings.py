@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'drf_yasg',
+    'graphene_django',
 
     'todo',
 
@@ -148,8 +149,14 @@ CACHES = {
 CORS_ALLOWED_ORIGINS = [
     "https://example.com",
     "https://sub.example.com",
-    "http://localhost:8080",
+    "http://localhost:3000",
     "http://127.0.0.1:9000",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+
+#graphql config
+GRAPHENE = {
+    'SCHEMA': 'app.schema.schema'
+}
