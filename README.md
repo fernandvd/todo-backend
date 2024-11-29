@@ -34,6 +34,11 @@ It is a backend make in django for TODO APP. This backend use django-rest-framew
 
 - Create .env file then copy .env.example to .env file and update theirs values.
 
+- Run the following command for execute migrations
+    ```bash
+    python manage.py migrate
+    ```
+
 - Run the following command for start app
     ```bash
     python manage.py runserver
