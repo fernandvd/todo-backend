@@ -12,7 +12,6 @@ class TodoViewSet(ModelViewSet):
     serializer_class = TodoSerializer
 
     
-    @method_decorator(cache_page(60*5))
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
